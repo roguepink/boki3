@@ -127,7 +127,7 @@
     var st = p.step || 0, dots = '<div class="stepDots">' + [0, 1, 2, 3].map(function (i) { return '<i class="' + (i === st ? 'on' : '') + '"></i>'; }).join('') + '</div>';
     if (st === 0) return '<div class="welcome">' + dots +
       '<img class="logo" src="icon-192.png" alt="">' +
-      '<h1>簿記3級を、<br>スキマ時間で。</h1><p>仕事のあとの5分から。あなたのレベルに合わせて出題して、分からないところは3段階でやさしく説明します。</p>' +
+      '<h1>簿記3級を、<br>スキマ時間で。</h1><p>1日5分から。あなたのレベルに合わせて出題して、分からないところは3段階でやさしく説明します。</p>' +
       '<div class="feat"><div><span class="fi">🎯</span><span><b>レベルに合わせて出題</b><br>解くほど、少しずつ難しく</span></div>' +
       '<div><span class="fi">🧒</span><span><b>説明は3段階</b><br>「小学生でもわかる」から「試験・実務のくわしい話」まで</span></div>' +
       '<div><span class="fi">🔁</span><span><b>まちがえた所が また出る</b><br>忘れたころに復習して、しっかり定着</span></div>' +
@@ -272,7 +272,7 @@
     var h = '<div class="scr">' + tabTop('練習', '<button class="iconBtn" data-act="go" data-v="settings">⚙️</button>');
     h += '<div class="tiles">' +
       '<button class="tile wide accent" data-act="startAuto"><span class="ic">🎯</span><span class="grow"><span class="t">おまかせ 10問</span><span class="d">あなたのレベルと苦手に合わせて自動で出題</span></span></button>' +
-      '<button class="tile" data-act="startQuick"><span class="ic">⚡</span><span class="t">3問だけ</span><span class="d">現場のあとの1〜2分に</span></button>' +
+      '<button class="tile" data-act="startQuick"><span class="ic">⚡</span><span class="t">3問だけ</span><span class="d">スキマ時間の1〜2分に</span></button>' +
       '<button class="tile" data-act="startReview"><span class="ic">🔁</span><span class="t">復習</span><span class="d">' + (due ? '今日の復習 ' + due + '問' : weak ? 'まちがえた問題 ' + weak + '問' : 'まちがえた問題がここに') + '</span>' + (due ? '<span class="badge pill ng">' + due + '</span>' : '') + '</button>' +
       '<button class="tile" data-act="startShiwake"><span class="ic">✍️</span><span class="t">仕訳トレーニング</span><span class="d">本番の第1問と同じ形で15問</span></button>' +
       '<button class="tile" data-act="startType"><span class="ic">⌨️</span><span class="t">入力で答える</span><span class="d">科目を自分で書く・音声もOK。覚えるのに効く</span></button>' +
