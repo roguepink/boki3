@@ -1,0 +1,20 @@
+<!doctype html><meta charset="utf-8"><title>validate</title>
+<script>window.__loadErr = []; window.onerror = function (m, src, l) { window.__loadErr.push((src || '').split('/').pop() + ':' + l + ' ' + m); };</script>
+<script src="../js/core.js"></script>
+<script src="../js/accounts.js"></script>
+<script src="../js/files.js"></script>
+<script>
+  // files.js の一覧を順に読む(ない物は飛ばす)
+  (function () {
+    var list = window.BOKI_DATA_FILES || [];
+    var i = 0;
+    function next() {
+      if (i >= list.length) { window.__loaded = true; return; }
+      var s = document.createElement('script'); s.src = '../' + list[i++];
+      s.onload = next; s.onerror = function () { window.__missing = (window.__missing || []).concat(s.src.split('/').pop()); next(); };
+      document.head.appendChild(s);
+    }
+    next();
+  })();
+</script>
+<script src="validate.js"></script>
