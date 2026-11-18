@@ -1,6 +1,6 @@
 {
-  "name": "ぼきトレ 簿記3級",
-  "short_name": "ぼきトレ",
+  "name": "まなぼき 簿記3級",
+  "short_name": "まなぼき",
   "description": "簿記3級を、スキマ時間でゼロから合格まで。レベルに合わせて出題、3段階のやさしい解説つき。無料・広告なし。",
   "lang": "ja",
   "start_url": "./",
@@ -8,11 +8,60 @@
   "id": "./?app=boki3-1",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#0f1a2e",
-  "theme_color": "#0f1a2e",
+  "background_color": "#f3f5fa",
+  "theme_color": "#0d9488",
   "icons": [
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": [
+    "education",
+    "productivity"
+  ],
+  "screenshots": [
+    {
+      "src": "shots/1.jpg",
+      "sizes": "390x844",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "ホーム"
+    },
+    {
+      "src": "shots/2.jpg",
+      "sizes": "390x844",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "仕訳の問題"
+    },
+    {
+      "src": "shots/3.jpg",
+      "sizes": "390x844",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "3段階の解説"
+    },
+    {
+      "src": "shots/4.jpg",
+      "sizes": "390x844",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "レッスン"
+    }
   ]
 }
